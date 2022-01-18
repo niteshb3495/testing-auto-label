@@ -10,5 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions-ecosystem/action-remove-labels@v1
+        env:
+          PR: ${{ github.event.pull_request.types }}
         with:
-          labels: pleasereview
+          labels: $PR
