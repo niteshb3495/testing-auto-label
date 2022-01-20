@@ -7,26 +7,24 @@
     }
   },
   "pr": {
-    "example": {
+    "Open": {
+      "requires": 1,
+      "conditions": [
+        {
+          "type": "isOpen",
+          "value": true
+        }
+      ]
+    },
+    "Draft": {
       "requires": 1,
       "conditions": [
         {
           "type": "isDraft",
-          "value": true
-        },
-        {
-          "type": "isDraft",
-          "value": true
-        },
-        {
-          "type": "isLocked",
-          "value": true
-        },
-        {
-          "type": "isOpen",
           "value": true
         }
       ]
     }
   }
 }
+
