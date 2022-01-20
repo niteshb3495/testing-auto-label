@@ -8,10 +8,20 @@ on:
     types: [opened, edited, closed, reopened, ready_for_review, synchronize]
 
 jobs:
-  add_label:
+  label:
     runs-on: ubuntu-latest
+    name: Label issues and pull requests
     steps:
       - uses: actions/checkout@v2
-      - uses: actions-ecosystem/action-add-labels@v1
-        with:
-          labels: ${{ github.event.pull_request.state }}
+      - uses: IvanFon/super-labeler-action@v1
+        # with:
+        #   github-token: '${{ secrets.GITHUB_TOKEN }}'
+
+# jobs:
+#   add_label:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - uses: actions-ecosystem/action-add-labels@v1
+#         with:
+#           labels: ${{ github.event.pull_request.state }}
