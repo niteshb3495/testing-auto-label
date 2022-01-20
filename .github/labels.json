@@ -1,0 +1,23 @@
+{
+  "pr": {
+    "Open": {
+      "requires": 1,
+      "conditions": [
+        {
+          "type": "isOpen",
+          "value": true
+        }
+      ]
+    },
+    "Draft": {
+      "requires": 1,
+      "conditions": [
+        {
+          "type": "isDraft",
+          "value": true
+        }
+      ]
+    }
+  }
+}
+

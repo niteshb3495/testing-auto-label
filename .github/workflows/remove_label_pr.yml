@@ -1,0 +1,24 @@
+# name: Remove Label
+
+# on:
+#   pull_request:
+#     types: 
+#       - opened
+#       - edited
+#       - closed
+#       - reopened
+#       - synchronize
+#       - converted_to_draft
+#       - ready_for_review
+
+
+# jobs:
+#   remove_label:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - uses: actions-ecosystem/action-remove-labels@v1
+#         #env:
+#           #PR: ${{ github.event.pull_request.state }}
+#         with:
+#           labels: ${{ github.event.pull_request.state }}
