@@ -1,7 +1,11 @@
 name: Add Label
 
+# on:
+#   pull_request:
+
 on:
   pull_request:
+    types: [opened, edited, closed, reopened, ready_for_review, synchronize]
 
 jobs:
   add_label:
