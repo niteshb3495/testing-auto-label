@@ -2,14 +2,6 @@ name: Add Label
 
 on:
   pull_request:
-    types: 
-      - opened
-      - edited
-      - closed
-      - reopened
-      - synchronize
-      - converted_to_draft
-      - ready_for_review
 
 jobs:
   add_label:
