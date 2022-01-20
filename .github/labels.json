@@ -1,11 +1,4 @@
 {
-  "labels": {
-    "example": {
-      "name": "example",
-      "colour": "#00ff00",
-      "description": "Example label"
-    }
-  },
   "pr": {
     "Open": {
       "requires": 1,
